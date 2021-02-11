@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        
+    <link rel="stylesheet" href="style.css">
+    <title>Covid19 Data</title>
+</head>
+
+<body onload="checkLocalStorage()">
+    <div class="container">
+        <div class="row">
+            <center>
+                <h1><i class="fas fa-biohazard"></i> COVID-19 <i class="fas fa-biohazard"></i></h1>
+                <h2><i class="fas fa-head-side-mask"></i> Put on your mask. <i class="fas fa-head-side-mask"></i></h2>
+                <h2><i class="fas fa-people-arrows"></i> Keep your social distance. <i class="fas fa-people-arrows"></i></h2>
+            </center>
+
+        </div>
+        <div class="row" style="margin-top: 50px;">
+            <div class="col-md-3">
+                <div class="card text-white bg-info mb-3" style="max-width: 20rem;">
+                    <div class="card-header"><b><i class="fas fa-viruses"></i> Confirmed</b></div>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <center>
+                                <p class="confirmed"></p><i class="fas fa-user"></i>
+                            </center>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-white bg-success mb-3" style="max-width: 20rem;">
+                    <div class="card-header"><b><i class="fas fa-virus-slash"></i> Recovered</b></div>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <center>
+                                <p class="recovered"></p><i class="fas fa-user"></i>
+                            </center>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-white bg-warning mb-3" style="max-width: 20rem;">
+                    <div class="card-header"><b><i class="fas fa-lungs-virus"></i> Critical</b></div>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <center>
+                                <p class="critical"></p><i class="fas fa-user"></i>
+                            </center>
+                        </h4>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-white bg-danger mb-3" style="max-width: 20rem;">
+                    <div class="card-header"><b><i class="fas fa-biohazard"></i> Deaths</b></div>
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <center>
+                                <p class="deaths"></p><i class="fas fa-user"></i>
+                            </center>
+                        </h4>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"> 
+                <button type="button" class="btn btn-primary">Get</button>
+                <small class="last-update-info">Latest Update: 10:01:420</small></div>
+           
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/c5fd1005e0.js" crossorigin="anonymous"></script><!--Add your own font awesome kit -->
+    <script src="app.js"></script>
+</body>
+
+</html>
